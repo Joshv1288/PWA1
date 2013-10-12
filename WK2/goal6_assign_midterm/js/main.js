@@ -18,4 +18,6 @@ avgGPA = fsInfo.gpa[1], fsInfo.gpa[2], fsInfo.gpa [3]
 
 console.log("Name: " + fsInfo.name)
 console.log("Address: " + fsInfo['address'])
-console.log("GPA: " + avgGPA)
+console.log("GPA: " + fsInfo.gpa[0])
+
+addData('John Doe', '42 Walibi Way', 'Sydney', 'AU', [3.4,3.0,3.7])
