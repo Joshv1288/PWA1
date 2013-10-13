@@ -54,15 +54,15 @@
 
     window.onload = disFsInfo;
 
-    var ids = document.querySelectorAll('id');
+    var ids = document.querySelectorAll('#contact-form #submit');
         for(var i = 0, max = ids.length; i<max; i++){
             console.log(ids[i]);
 
 
     ids.onclick = function(e){
-        document.getElementById('name').innerHTML = "Name: " + students[1].name;
-        document.getElementById('address').innerHTML ="Address: " +students[1].address.street + students[1].address.city + students[1].address.state;
-        document.getElementById('gpa').innerHTML="GPA: " + students[1].gpa.join(", ");
+        document.getElementById('name').value = "Name: " + students[1].name;
+        document.getElementById('address').value ="Address: " +students[1].address.street + students[1].address.city + students[1].address.state;
+        document.getElementById('gpa').value="GPA: " + students[1].gpa.join(", ");
         document.getElementById('date').innerHTML = "Date: " + date();
         document.getElementById('gpaavg').innerHTML = "Average GPA: " + " ";
         e.preventDefault();
