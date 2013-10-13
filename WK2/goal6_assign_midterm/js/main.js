@@ -65,14 +65,16 @@ for(var i=0; i<count;i++){
     return month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear()
 }
 
-addData('Jane Smith', '42 Wallaby Way', 'Aiea', 'Hawaii', [3.2, 4.0, 2.2] )
+
 
 
     function addInfo(){
+        var addData = [{'Jane Smith', '42 Wallaby Way', 'Aiea', 'Hawaii', [3.2, 4.0, 2.2]}];
         document.getElementById("name").innerHTML = "Name: " + info[1].name;
         document.getElementById("address").innerHTML = "Address: " + info[1].address.street + info[1].address.city + info[1].address.state;
         document.getElementById("gpa").innerHTML = "GPA: " + info[1].gpa;
         document.getElementById("date").innerHTML = "Date: " + date();
         document.getElementById("gpaavg").innerHTML = "Average GPA: " + " "
     }
+    addInfo()
 })();

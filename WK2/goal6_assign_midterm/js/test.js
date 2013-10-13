@@ -50,7 +50,26 @@
         return month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear()
     }
 
+
+
     window.onload = disFsInfo;
+
+    var ids = document.querySelectorAll('id');
+        for(var i = 0, max = ids.length; i<max; i++){
+            console.log(ids[i]);
+
+
+    ids.onclick = function(e){
+        document.getElementById('name').innerHTML = "Name: " + students[1].name;
+        document.getElementById('address').innerHTML ="Address: " +students[1].address.street + students[1].address.city + students[1].address.state;
+        document.getElementById('gpa').innerHTML="GPA: " + students[1].gpa.join(", ");
+        document.getElementById('date').innerHTML = "Date: " + date();
+        document.getElementById('gpaavg').innerHTML = "Average GPA: " + " ";
+        e.preventDefault();
+        return false;
+    };
+        }
+    //function newStudent('Jane Doe','789 NoWhere Drive','Lostville','California',[3.2, 4.0, 2.2]){  };
 
 
 
